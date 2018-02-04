@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>CS 3220 Practice Lab</title>
+    <meta charset="UTF-8">
+    <title>Excersize 2</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <button>BIG BUTTON</button>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Rate</th>
-                <th>Cost</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Grandma</td>
-                <td>5</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Factory</td>
-                <td>10</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Mine</td>
-                <td>20</td>
-                <td>200</td>
-            </tr>
-        </tbody>
-    </table>
-    <form action="">
-        <label for="name">Your Name</label>
-        <input type="text" id="name">
-        <!-- add more necessary information you need for creating additional recipes -->
-    </form>
+    <h1>Incremental Game Framework</h1>
+            
+        <ul>
+            <a href="info.html">Game Information</a></li>
+            <a href="generator.html">Generators</a></li>
+            <a href="events.html">Events</a></li>
+        </ul>
+    <div id="container">
+        <div id=a>
+
+            <label >Generator Name</label>
+            <form action="">
+                <input type="text" id="name">
+            </form>
+
+            <label >Generator Rate</label>
+            <form action="">
+                <input type="text" id="name">
+            </form>
+
+            <label >Base Cost</label>
+            <form action="">
+                <input type="text" id="name">
+            </form>
+
+            <label >Unlock At</label>
+            <form action="">
+                <input type="text" id="name">
+            </form>
+
+
+            <label >Description</label>
+            <style type="text/css">
+                label {
+                display: block;
+                }
+            </style>
+
+            <textarea rows="8" cols="35"></textarea>
+
+            <button>{Add|Edit}</button>
+        </div>   
+        <div id=b>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rate</th>
+                        <th>Cost</th>
+                        <th>Unlock at</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grandma</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Factory</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Mine</td>
+                        <td>20</td>
+                        <td>200</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div> 
+    </div>
 </body>
+
+
 <style>
+    #container {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    #a {
+    width: 40%;
+    }
+    #b {
+      width: 70%;
+    }
     button {
         color: #fff;
         background-color: #009688;
         font-size: 16px;
         padding: 0.5em 1em;
-    }
-    table {
-        border: 1px solid red;
-    }
-    tr {
-        background-color: #ccc;
     }
     input {
         font-size: 16px;
