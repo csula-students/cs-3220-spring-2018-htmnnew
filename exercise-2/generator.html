@@ -8,8 +8,8 @@
     <h1>Incremental Game Framework</h1>
             
         <ul>
-            <a href="info.html">Game Information</a></li>
-            <a href="generator.html">Generators</a></li>
+            <a href="info.html">Game Information ||</a></li>
+            <a href="generator.html">Generators ||</a></li>
             <a href="events.html">Events</a></li>
         </ul>
     <div id="container">
@@ -49,14 +49,14 @@
         </div>   
         <div id=b>
             <table>
-                <thead>
+                <th>
                     <tr>
                         <th>Name</th>
                         <th>Rate</th>
                         <th>Cost</th>
                         <th>Unlock at</th>
                     </tr>
-                </thead>
+                </th>
                 <tbody>
                     <tr>
                         <td>Grandma</td>
@@ -77,14 +77,30 @@
                         <td>200</td>
                     </tr>
                 </tbody>
-            </table>
-            
+            </table> 
         </div> 
     </div>
 </body>
 
 
 <style>
+    .info-table {
+        border-collapse: collapse;
+    }
+        .info-table tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+    .info-table td,
+    .info-table th {
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+    }
+    .info-table .align-right {
+        text-align: right;
+    }
+
+
+
     #container {
       display: -webkit-flex;
       display: -ms-flexbox;

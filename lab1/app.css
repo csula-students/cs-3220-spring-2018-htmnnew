@@ -1,0 +1,62 @@
+button
+{
+    float: right;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    padding: 0.5em 1em;    
+}
+
+#story
+{ 
+  color: white; 
+  width:100%;
+  margin:5px;
+  padding:7px;
+} 
+#mainpara{
+    background-color: black;
+}
+}
+#resName {
+    font-size: 3em;
+    font-weight: bold;
+}
+#resleft{
+    float: left;
+}
+#container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+#a {
+    margin: 5px;
+    padding: 7px;
+    border: 2px solid black;
+    width: 33%;
+}
+#b {
+    margin: 5px;
+    padding: 7px;
+    border: 2px solid black;
+    width: 33%;
+}
+#c {
+    margin: 5px;
+    padding: 7px;
+    border: 2px solid black;
+    width: 33%;
+
+}
+#cost {
+    padding: 3px;
+    border: 2px solid green;
+    border-radius: 10px;
+    float: right;
+
+}
+#Desc{
+    font-weight: bold;
+}
