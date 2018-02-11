@@ -1,0 +1,15 @@
+Theme:
+# Sushi Fantasy
+
+Resource:
+* Sushi Rolls
+
+Generators:
+* Cursor
+* Sushi Chef
+* Sushi Restaurant
+
+Story:
+
+* You like sushi soooo much that you decided to start selling your OWN MADE SUSHI ROLLS!!!
+* GO MAKE YOUR CALIFORNIA ROLLS!!!
