@@ -1,16 +1,5 @@
 
 
-
-
-	var testB = document.getElementById('mainB');
-	testB.addEventListener('click', function(){
-		console.log('CLICKED');
-		var temp = parseInt(document.getElementById('score').innerHTML);
-		console.log(temp);
-		temp ++;
-		document.getElementById('score').innerHTML = temp;
-	});
-
 // PubSub is single object for publish data to multiple subscribers
 class PubSub {
     constructor () {
@@ -33,10 +22,17 @@ class PubSub {
 
 const pubSub = new PubSub();
 
-pubSub.subscribe(data => {
-    console.log(data);
-});
 
-pubSub.publish('Hello world!');
+	var testB = document.getElementById('mainB');
+	testB.addEventListener('click', function(){
+		pubSub.publish(window.incrementalGame.state.counter);
+	});
+
+	pubSub.subscribe(action => {
+		var temp = parseInt(document.getElementById('score').innerHTML);
+		console.log(temp);
+		temp ++;
+		document.getElementById('score').innerHTML = temp;
+	});
 
 ///function that increments the counter goes inside subscribers
