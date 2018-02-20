@@ -6,6 +6,14 @@
     <title>Sushi Fantasy</title>
 </head>
 <body>
+    <script>
+    window.incrementalGame = {
+        state: {
+            counter: 0
+        }
+    };
+    </script>
+
     <h1>Sushi Fantasy</h1>
 
     <div id=mainpara>
@@ -18,9 +26,9 @@
     </div>    
 
     <div id=resName>Sushi</div>
-    <div id=resAmount>456</div>
+    <div id=score>0</div>
 
-    <button>Make Sushi</button>
+    <button id=mainB>Make Sushi</button>
 
     <div id="container">
         <div id=a>
@@ -43,6 +51,7 @@
             <button id=cost > 500 Resources</button>            
         </div> 
     </div>
+    <script src="app.js"></script>
 </body>
 <footer>
   <p>Made by: Nerses Martirosyan</p>
