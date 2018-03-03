@@ -3,8 +3,22 @@ export default function reducer (state, action) {
 	case 'EXAMPLE_MUTATION':
 		state.example = action.payload;
 		return state;
-	default:
-		return state;
-	}
+
+
+	case 'BUY_GENERATOR':
+        state.counter -= 10;
+
+        state.generators.forEach(function(element){
+        	if (element.name = action.payload.name){
+        		element.quantity += 1;
+        	} 
+        })
+
+        return state;
+
+
+    default:
+        return state;
+    }    
 }
 
