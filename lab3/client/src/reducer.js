@@ -6,11 +6,10 @@ export default function reducer (state, action) {
 
 
 	case 'BUY_GENERATOR':
-        state.counter -= 10;
-
         state.generators.forEach(function(element){
         	if (element.name = action.payload.name){
         		element.quantity += 1;
+        		state.counter -= element.baseCost;
         	} 
         })
 
