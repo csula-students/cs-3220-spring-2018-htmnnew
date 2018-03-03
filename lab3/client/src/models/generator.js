@@ -28,6 +28,13 @@ export default class Generator {
 	 */
 	getCost () {
 		// TODO: implement the function according to doc above
+		if(this.quantity == 0){
+			return this.baseCost
+		}
+		else{
+			const newcost = this.baseCost * Math.pow((1 + 0.05),this.quantity);
+			return Math.round(newcost * 100) / 100;
+		}
 		return 0;
 	}
 
@@ -38,6 +45,6 @@ export default class Generator {
 	 */
 	generate () {
 		// TODO: implement based on doc above
-		return 0;
+		return this.rate * this.quantity;
 	}
 }
