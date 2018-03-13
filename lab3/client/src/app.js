@@ -75,10 +75,26 @@ main();
 function main () {
 	// TODO: fill the blank based on the theme you have choosen
 	const initialState = {
-		example: 'Hello custom element',
+		example: 'Sushi Fantasy',
 		counter: 0,
-		generators: [],
-		story: []
+		generators: [        
+			{
+	            name: 'Sushi Shef',
+	            description: 'Creates 5 Sushies',
+	            rate: 5,
+	            baseCost: 10,
+	            quantity: 0,
+	            unlockValue: 10
+	        }
+        ],
+		story: [       
+			 {
+	            name: 'Shef Comes',
+	            description: 'Sushi Shef making sushies',
+	            triggeredAt: 10,
+	            state: 'hidden'
+	        }
+	        ]
 	};
 
 	// initialize store
