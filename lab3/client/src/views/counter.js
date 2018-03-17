@@ -11,7 +11,7 @@ export default function (store) {
 
 		handleStateChange (newState) {
 			// TODO: update inner HTML based on the new state
-			this.innerHTML = store.state.counter;
+			this.innerHTML = store.state.counter + ' Sushies';
 		}
 
 		connectedCallback () {

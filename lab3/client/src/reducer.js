@@ -15,7 +15,9 @@ export default function reducer (state, action) {
 	case constants.actions.BUY_GENERATOR:
         state.generators.forEach(function(element){
             const temp = new Generator(element);
-        	if (temp.name == action.payload && state.counter >= temp.getCost()){
+            // console.log('Before Checking');
+            // console.log(temp.name + ' | ' + action.payload)
+        	if (temp.name == action.payload.name && state.counter >= temp.getCost()){
         		console.log('buying...');
                 state.counter -= Math.round(temp.getCost());
                 temp.quantity += 1;

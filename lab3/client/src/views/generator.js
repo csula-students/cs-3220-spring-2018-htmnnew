@@ -23,7 +23,9 @@ export default function (store) {
 				console.log("Buying " + this.name);
 				this.store.dispatch({
 					type: constants.actions.BUY_GENERATOR,
-					payload: this.name
+					payload: {
+						name: this.name
+					}
 				});
 				console.log(this.store.state.generators[this.num].quantity);
 			});
