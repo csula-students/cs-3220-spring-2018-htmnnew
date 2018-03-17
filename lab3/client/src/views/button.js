@@ -1,3 +1,4 @@
+import constants from '../constants';
 export default function (store) {
 	return class ButtonComponent extends window.HTMLElement {
 		constructor () {
@@ -6,9 +7,10 @@ export default function (store) {
 		}
 
 		connectedCallback () {
-			console.log('ExampleComponent#onConnectedCallback');
-			this.innerHTML = '<button>Click me</button>';
+			//console.log('ExampleComponent#onConnectedCallback');
+			this.innerHTML = '<button>Make Sushi!</button>';
 			this.addEventListener('click', () => {
+				console.log("CLICK");
 				this.store.dispatch({
 					type: constants.actions.BUTTON_CLICK
 				});
@@ -16,7 +18,7 @@ export default function (store) {
 		}
 
 		disconnectedCallback () {
-			console.log('ExampleComponent#onDisconnectedCallback');
+			//console.log('ExampleComponent#onDisconnectedCallback');
 			this.store.unsubscribe(this.onStateChange);
 		}
 	};

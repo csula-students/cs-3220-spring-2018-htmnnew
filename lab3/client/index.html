@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <title>Sushi Fantasy</title>
+</head>
+<body>
+
+    <component-example></component-example>
+    <hr>
+    <game-story-book data-message=0></game-story-book>
+    <game-story-book data-message=1></game-story-book>
+    <game-story-book data-message=2></game-story-book>
+    <game-story-book data-message=3></game-story-book>
+    <game-button></game-button>
+    <game-counter></game-counter>
+
+    <div id=container>
+        <game-generator id=a data-message=0></game-generator>
+        <game-generator id=b data-message=1></game-generator>
+        <game-generator id=c data-message=2></game-generator>    
+    </div>
+
+
+    <script src="./src/app.js"></script>
+    <script src="../dest/app.bundle.js"></script>
+</body>
+<footer>
+  <p>Made by: Nerses Martirosyan</p>
+</footer>
+</html>

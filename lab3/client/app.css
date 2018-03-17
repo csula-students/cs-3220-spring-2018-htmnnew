@@ -1,0 +1,85 @@
+game-button button {
+    color: black;
+    font-size: 32px;
+    border-radius: 37px;
+    background-color: deepskyblue;
+    font-family: fantasy;
+    font-style: italic;
+    text-shadow: 2px 3px white;
+    border-style: dashed;
+    padding-right: 33px;
+}
+
+
+game-counter {
+  color: red;
+  font-size: 32px;
+}
+component-example {
+    font-family: fantasy;
+    margin: 39px;
+    font-size: 66px;
+    color: whitesmoke;
+    text-shadow: -5px 7px black;
+}
+body {
+      background-color: darkcyan;
+}
+#story {
+    font-family: cursive;
+    font-size: 22px;
+    padding-left: 40px;
+    background-color: yellowgreen;
+    padding: 12px;
+    padding-bottom: 2px;
+    padding-top: 0px;
+    margin-right: 50%;
+    border-top: 5px solid sandybrown;
+    border-left: 5px solid sandybrown;
+}
+game-counter {
+    color: black;
+    margin: 3%;
+    font-size: 32px;
+    background-color: yellowgreen;
+    border: 2px solid chocolate;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-family: fantasy;
+}
+button{
+    float: right;
+    color: black;
+    font-size: 16px;
+    background-color: sandybrown;
+    padding: 0.5em 1em;
+    border-style: ridge;
+    border-radius: 23%;
+    font-family: cursive;   
+}
+#container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+game-generator {
+    margin: 5px;
+    padding: 19px;
+    border: 2px solid black;
+    width: 33%;
+    background-color: yellowgreen;
+    font-size: 26px;
+    font-family: fantasy;
+}
+#genquan {
+    float: right;
+    font-size: 29px;
+    margin: 3px;
+}
+footer {
+    font-family: fantasy;
+    font-size: 27px;
+}

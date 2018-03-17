@@ -79,27 +79,62 @@ function main () {
 		counter: 0,
 		generators: [        
 			{
-	            name: 'Sushi Shef',
-	            description: 'Creates 5 Sushies',
-	            rate: 5,
+	            name: 'Chef',
+	            description: 'Creates 10 Sushies',
+	            rate: 10,
 	            baseCost: 10,
 	            quantity: 0,
 	            unlockValue: 10
-	        }
+	        },
+	        {
+	            name: 'FastFood',
+	            description: 'Creates 50 Sushies',
+	            rate: 50,
+	            baseCost: 100,
+	            quantity: 0,
+	            unlockValue: 100
+	        },
+	        {
+	            name: 'Restaurant',
+	            description: 'Creates 500 Sushies',
+	            rate: 500,
+	            baseCost: 10000,
+	            quantity: 0,
+	            unlockValue: 1000
+	        }	        
         ],
 		story: [       
+			{
+	            name: 'Welcome',
+	            description: 'Hey! Let us Start Making sushies!!!!',
+	            triggeredAt: 0,
+	            state: 'hidden'
+	        },			
+
 			 {
 	            name: 'Shef Comes',
-	            description: 'Sushi Shef making sushies',
+	            description: 'Hey Look! Chef is here to help you!',
 	            triggeredAt: 10,
 	            state: 'hidden'
-	        }
+	        },
+			 {
+	            name: 'Fast Food',
+	            description: 'Hey you can now buy a sushi fast food place!',
+	            triggeredAt: 100,
+	            state: 'hidden'
+	        }, 
+			 {
+	            name: 'Restaurant',
+	            description: 'You can now buy a Restaurant!!!',
+	            triggeredAt: 10000,
+	            state: 'hidden'
+	        } 	        	   	
 	        ]
 	};
 
 	// initialize store
 	const store = new Store(reducer, initialState);
-	console.log(ExampleComponent(store));
+	//console.log(ExampleComponent(store));
 
 	// define web components
 	window.customElements.define('component-example', ExampleComponent(store));

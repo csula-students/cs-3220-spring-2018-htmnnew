@@ -7,7 +7,6 @@ export default class Generator {
 	 * @param {object} meta - meta object for constructing generator
 	 */
 	constructor (meta) {
-		this.type = meta.type;
 		this.name = meta.name;
 		this.description = meta.description;
 		this.rate = meta.rate;
@@ -32,7 +31,7 @@ export default class Generator {
 			return this.baseCost
 		}
 		else{
-			const newcost = this.baseCost * Math.pow((1 + 0.05),this.quantity);
+			const newcost = this.baseCost * Math.pow((1 + constants.growthRatio),this.quantity);
 			return Math.round(newcost * 100) / 100;
 		}
 		return 0;
