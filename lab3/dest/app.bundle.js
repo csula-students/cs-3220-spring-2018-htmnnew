@@ -952,7 +952,9 @@ function reducer(state, action) {
         case _constants2.default.actions.BUY_GENERATOR:
             state.generators.forEach(function (element) {
                 const temp = new _generator2.default(element);
-                if (temp.name == action.payload && state.counter >= temp.getCost()) {
+                // console.log('Before Checking');
+                // console.log(temp.name + ' | ' + action.payload)
+                if (temp.name == action.payload.name && state.counter >= temp.getCost()) {
                     console.log('buying...');
                     state.counter -= Math.round(temp.getCost());
                     temp.quantity += 1;
@@ -1050,7 +1052,7 @@ exports.default = function (store) {
 
 		handleStateChange(newState) {
 			// TODO: update inner HTML based on the new state
-			this.innerHTML = store.state.counter;
+			this.innerHTML = store.state.counter + ' Sushies';
 		}
 
 		connectedCallback() {
@@ -1142,7 +1144,9 @@ exports.default = function (store) {
 				console.log("Buying " + this.name);
 				this.store.dispatch({
 					type: _constants2.default.actions.BUY_GENERATOR,
-					payload: this.name
+					payload: {
+						name: this.name
+					}
 				});
 				console.log(this.store.state.generators[this.num].quantity);
 			});
