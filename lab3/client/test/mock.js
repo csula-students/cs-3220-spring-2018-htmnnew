@@ -1,5 +1,4 @@
 export const generator = {
-	type: 'autonomous',
 	name: 'Grandma',
 	description: 'desc',
 	rate: 10,

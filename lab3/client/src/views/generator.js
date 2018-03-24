@@ -46,7 +46,7 @@ export default function (store) {
 	            	<label id=genquan>${this.quantity}</label>
 	            	<p id=gendesc>${this.description}</p>
 	            	<label id=genrate>${this.rate + ' per second'} </label>
-	            	<button id=getbutt>${Math.round(this.baseCost) + ' Sushies'}</button>
+	          	  	<button id=getbutt>${Math.round(this.baseCost) + ' Sushies'}</button>
 	       		</div>`;
 		}
 		
